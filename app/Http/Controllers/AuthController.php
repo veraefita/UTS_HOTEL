@@ -19,7 +19,6 @@ class AuthController extends Controller
 
         return view('auth.login');
     }
-
     /**
      * Proses login biasa (non-AJAX).
      */
@@ -36,7 +35,6 @@ class AuthController extends Controller
             'login' => 'Username atau password salah.',
         ])->withInput();
     }
-
     /**
      * Logout dan hapus sesi.
      */

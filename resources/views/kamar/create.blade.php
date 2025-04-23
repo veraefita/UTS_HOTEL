@@ -18,6 +18,7 @@
                 @error('tipe_kamar')
                     <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
+                <small class="text-muted">Minimal 3 karakter, maksimal 100 karakter</small>
             </div>
 
             <div class="form-group">
@@ -29,6 +30,7 @@
                 @error('harga_per_malam')
                     <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
+                <small class="text-muted">Masukkan harga antara Rp1.000 - Rp1.000.000.000 (kelipatan 100)</small>
             </div>
 
             <div class="form-group">
@@ -40,6 +42,7 @@
                 @error('jumlah_kasur')
                     <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
+                <small class="text-muted">Minimal 1-3 kasur</small>
             </div>
 
             <div class="form-group">
@@ -51,6 +54,7 @@
                 @error('kapasitas')
                     <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
+                <small class="text-muted">Minimal 1-6 orang</small>
             </div>
 
             <div class="form-group">
@@ -63,6 +67,7 @@
                 @error('status')
                     <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
+                <small class="text-muted">Harus Dipilih</small>
             </div>
 
             <div class="form-group">
@@ -72,6 +77,7 @@
                 @error('deskripsi')
                     <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
+                <small class="text-muted">Opsional</small>
             </div>
 
             <button type="submit" class="btn btn-primary">Simpan</button>

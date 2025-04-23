@@ -23,6 +23,7 @@
                 @error('kamar_id')
                     <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
+                <small class="text-muted">Harus Dipilih</small>
             </div>
             
             <div class="form-group">
@@ -33,6 +34,7 @@
                 @error('nama_tamu')
                     <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
+                <small class="text-muted">Minimal 3 karakter, maksimal 100 karakter</small>
             </div>
             
             <div class="form-group">
@@ -42,6 +44,7 @@
                 @error('email')
                     <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
+                <small class="text-muted">Minimal 3 karakter, maksimal 100 karakter</small>
             </div>
             
             <div class="form-group">
@@ -52,6 +55,7 @@
                 @error('nomor_telepon')
                     <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
+                <small class="text-muted">maksimal 1-12 karakter</small>
             </div>
             
             <div class="form-group">
@@ -62,6 +66,7 @@
                 @error('tanggal_check_in')
                     <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
+                <small class="text-muted">Tanggal Check In harus diisi</small>
             </div>
             
             <div class="form-group">
@@ -72,6 +77,7 @@
                 @error('tanggal_check_out')
                     <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
+                <small class="text-muted">Tanggal Check Out harus diisi</small>
             </div>
             
             <div class="form-group">
@@ -82,6 +88,7 @@
                 @error('jumlah_orang')
                     <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
+                <small class="text-muted">Minimal 1-6 orang</small>
             </div>
             
             <div class="form-group">
@@ -94,6 +101,7 @@
                 @error('status_pembayaran')
                     <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
+                <small class="text-muted">Harus Dipilih</small>
             </div>
             
             <button type="submit" class="btn btn-primary">Simpan</button>
